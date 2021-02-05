@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title> Welcome to the Recipe App {{ title }}</title>
+    </head>
+    <body>
+        <h1>Welcome to the Recipe App- {{ title }}</h1>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('add') }}">New Recipe</a>
+        {% block body %}
+        {% endblock body %}
+    </body>
+</html>
